@@ -1,3 +1,16 @@
-<h2 id="title">Welcome to Ember</h2>
+<header class={{this.currentRouteName}}>
+	<h1 class="logo">subforum</h1>
+	{{about-overlay}}
+</header>
 
-{{outlet}}
+{{liquid-outlet}}
+
+<footer class={{this.currentRouteName}}>
+	<nav>
+		<ul>
+			{{#link-to 'index' tagName="li" id="menu-index" href=false}}{{/link-to}}
+			{{#link-to 'press' tagName="li" id="menu-press" href=false}}{{/link-to}}
+			{{#link-to 'distraction' id="menu-distraction" tagName="li"}}{{/link-to}}
+		</ul>
+	</nav>
+</footer>

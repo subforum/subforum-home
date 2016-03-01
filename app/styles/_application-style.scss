@@ -1,0 +1,56 @@
+body {
+  .liquid-container {
+    position:absolute !important;
+    top:0;
+    bottom:0;
+  }
+	ul {
+		list-style: none;
+	}
+	header {
+    padding: 10px 20px;
+    height:80px;
+    position:fixed;
+    z-index: 5;
+    top: 0;
+    width:100%;
+    .logo {
+        font-family: "KnewaveOutlineRegular";
+        text-transform: uppercase;
+        float:left;
+        transition: color 0.5s ease;
+    }
+    nav {
+      font-family: "Raleway";
+      text-transform: uppercase;
+      float:right;
+      font-size: 24px;
+    }
+  }
+  footer {
+  	position:absolute;
+  	bottom:50px;
+  	margin:0px auto;
+    width:100px;
+    margin-left:-50px;
+    left:50%;
+  	nav {
+  		ul {
+  			margin:0px;
+  			padding:0px;
+  			li {
+          display:inline-block;
+  				cursor: pointer;
+  				width:20px;
+  				height:20px;
+  				border-radius:50%;
+  				border:1px solid black;
+  				margin-right:10px;
+  				&.active {
+  					background-color:black;
+  				}
+  			}
+  		}
+  	}
+  }
+}

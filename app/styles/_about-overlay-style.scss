@@ -1,0 +1,41 @@
+.overlay {
+	display:none;
+	background-color:white;
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	.overlay-logo {
+		color:red;
+		display:inline-block;
+		float:left;
+		margin:0px;
+		font-family: "KnewaveOutlineRegular";
+    text-transform: uppercase;
+	}
+	.fa {
+		float:right;
+		color:red;
+		font-size:24px;
+	}
+	.about-body {
+		margin-top:100px;
+		padding:0px 20px;
+	}
+	.papua {
+		@include span-columns(6);
+	}
+	.guinea {
+		@include span-columns(6);
+		img {
+			margin:0px auto;
+			display:table;
+			width:200px;
+		}
+		h1 {
+			color:black;
+			text-align:center;
+		}
+	}
+}

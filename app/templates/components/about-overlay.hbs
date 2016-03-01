@@ -1,0 +1,27 @@
+<nav>
+	<ul>
+		<li {{action "showHide"}}>about</li>
+	</ul>
+</nav>
+
+<div class="overlay">
+	<header class={{this.currentRouteName}}>
+		<h1 class="overlay-logo">subforum</h1>
+		{{fa-icon "close" click=(action "showHide")}}
+	</header>
+
+	<div class="about-body">
+		<div class="papua">
+			<p>Banjo disrupt keffiyeh, master cleanse pabst craft beer offal. Shoreditch humblebrag quinoa, flannel pug scenester single-origin coffee. Intelligentsia man bun meggings, lumbersexual deep v next level direct trade. Banjo disrupt before they sold out deep v, artisan cornhole meditation blog. Organic kogi raw denim hoodie lomo narwhal, small batch locavore stumptown pickled butcher yr. Craft beer tumblr fashion axe, chartreuse polaroid poutine retro tattooed mixtape. Franzen kickstarter hashtag man bun, seitan fixie slow-carb etsy art party sustainable intelligentsia pinterest fap.</p>
+
+			<p>Try-hard heirloom gastropub, cardigan wolf salvia selvage vegan shabby chic offal schlitz lo-fi four loko williamsburg. Wolf cardigan keytar, messenger bag kickstarter vice williamsburg kinfolk 3 wolf moon kombucha distillery four dollar toast ramps. Kogi polaroid 90's meditation 3 wolf moon occupy distillery bespoke retro kale chips. Franzen kickstarter locavore, austin kogi photo booth shoreditch try-hard lomo. Migas banjo health goth, sartorial street art YOLO hashtag austin green juice distillery kickstarter mlkshk kogi thundercats. Skateboard truffaut chicharrones cardigan, fixie salvia tattooed narwhal DIY everyday carry shabby chic. 90's lomo before they sold out gochujang.</p>
+		</div>
+		<div class="guinea">
+			<h1>Core Team</h1>
+			<img src="assets/circular-headshot.png" />
+		</div>
+	</div>
+</div>
+
+
+{{yield}}

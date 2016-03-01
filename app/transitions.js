@@ -1,0 +1,20 @@
+export default function(){  
+  this.transition(
+    this.fromRoute('press'),
+    this.toRoute('index'),
+    this.use('fade'),
+    this.reverse('fade')
+  );
+  this.transition(
+    this.fromRoute('press'),
+    this.toRoute('distraction'),
+    this.use('toLeft'),
+    this.reverse('toRight')
+  );
+  this.transition(
+    this.fromRoute('distraction'),
+    this.toRoute('index'),
+    this.use('toUp'),
+    this.reverse('toDown')
+  );
+}

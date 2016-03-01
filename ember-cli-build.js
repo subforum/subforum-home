@@ -7,6 +7,10 @@ module.exports = function(defaults) {
     // Add options here
   });
 
+  emberCliFontAwesome: {
+    useScss: true
+  }
+
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //

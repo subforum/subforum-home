@@ -1,0 +1,53 @@
+body {
+	&.index {
+		background-color: #EE3124;
+		transition: background 1s linear;
+	}
+	header.index {
+		h1 {
+			color: white;
+			transition: color 1s ease;
+		}
+		li {
+			color: white;
+			transition: color 1s ease;
+		}
+	}
+	footer.index {
+		li {
+			border:1px solid white;
+			transition: border 1s ease;
+			&.active {
+				background-color:white;
+				transition: background-color 1s ease;
+			}
+		}
+	}
+	.index-main {
+		padding-top:10%;
+		opacity:1;
+		transition: opacity 1s ease;
+		img {
+			position:absolute;
+			height:95%;
+			top:10px;
+			z-index:-5;
+			left:-200px;
+		}
+		.body-text {
+			padding-top:10%;
+			@include span-columns(8);
+			@include shift(3);
+			color:white;
+			font-family:'KnewaveRegular';
+			font-size:36px;
+		}
+		.fa {
+			font-size:72px;
+			color:white;
+			@include span-columns(1);
+			cursor: pointer;
+			margin-top:20%;
+		}
+	}
+}
