@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
 body {
 	&.index {
 		background-color: #EE3124;
@@ -29,17 +31,11 @@ body {
 		transition: opacity 1s ease;
 		img {
 			position:absolute;
-			height:95%;
-			top:10px;
 			z-index:-5;
-			left:-200px;
 		}
 		.body-text {
-			padding-top:10%;
-			@include span-columns(8);
-			@include shift(3);
 			color:white;
-			font-family:'KnewaveRegular';
+			font-family: 'Lato', sans-serif;
 			font-size:36px;
 		}
 		.fa {
@@ -50,4 +46,50 @@ body {
 			margin-top:20%;
 		}
 	}
+}
+
+@media (min-width: 768px) {
+	.body-text {
+		padding-top:10%;
+		@include span-columns(8);
+		@include shift(3);
+	}
+	.index-main {
+		img {
+			height:95%;
+			top:10px;
+			left:-200px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+  .index-main {
+  	a {
+    	display: none;
+    }
+		img {
+			height:95%;
+			top:10px;
+			left:-100px;
+		}
+  }
+  .body-text {
+  	padding:0px 20px;
+  	@include span-columns(12);
+  }
+}
+
+@media (max-width: 415px) {
+	.index-main {
+		img {
+			height:95%;
+			top:10px;
+			left:-200px;
+		}
+  }
+  .body-text {
+  	padding:100px 20px;
+  	@include span-columns(12);
+  }
 }
