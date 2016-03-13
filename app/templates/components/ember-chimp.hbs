@@ -1,0 +1,14 @@
+<label>
+  <div class="label-text">{{label}}</div>
+  {{input key-press="valueDidChange" 
+          placeholder="Email Address"
+          value=value 
+          type="email" 
+          name="EMAIL"}}
+</label>
+{{input value=firstname name="FNAME" placeholder="First Name"}}
+{{input value=lastname name="LNAME" placeholder="Last Name"}}
+{{input value=company name="MMERGE3" placeholder="Company"}}
+
+<button type="submit">{{if isLoading loadingText buttonText}}</button>
+<div class="chimp-says">{{chimpSays}}</div>

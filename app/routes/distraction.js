@@ -10,6 +10,7 @@ export default Ember.Route.extend({
     // to be added to the body
     Ember.$('body').addClass(this.routeName);
 
+    // $.backstretch('assets/harvard-square.jpg');
     /*
     Ember.run.later((function() {
 		  function displaywheel(e){
