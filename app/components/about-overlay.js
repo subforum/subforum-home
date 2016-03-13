@@ -5,7 +5,7 @@ export default Ember.Component.extend({
 	actions: {
 
     showHide: function() {
-    	this.$('.overlay').toggle('slow');
+    	this.$('.overlay').slideToggle('slow');
     },
   }
 });

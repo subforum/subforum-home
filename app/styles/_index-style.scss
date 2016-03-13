@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
 
 body {
 	&.index {
@@ -73,6 +73,13 @@ body {
 		}
   }
   .body-text {
+  	padding:0px 20px;
+  	@include span-columns(8);
+  }
+}
+
+@media (max-width: 768px) {
+	.body-text {
   	padding:0px 20px;
   	@include span-columns(12);
   }
