@@ -15,6 +15,7 @@ body {
     position:fixed;
     z-index: 5;
     top: 0;
+    left: 0;
     width:100%;
     .logo {
         font-family: "KnewaveOutlineRegular";
@@ -28,12 +29,14 @@ body {
       float:right;
       font-size: 24px;
       cursor:pointer;
+      margin-right:20px;
     }
   }
   footer {
   	position:absolute;
-  	bottom:50px;
   	width:100%;
+    padding:10px 0px;
+    left:0px;
   	nav {
       display:table;
       margin:0px auto;
@@ -55,5 +58,17 @@ body {
   			}
   		}
   	}
+  }
+}
+
+@media (min-width: 769px) {
+  footer {
+    bottom:50px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    bottom:0px;
   }
 }

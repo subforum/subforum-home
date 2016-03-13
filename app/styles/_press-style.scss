@@ -26,10 +26,10 @@ body {
 	.press-main {
 		color:#ffffff;
 		font-family: 'Lato', sans-serif;
+		overflow:scroll;
 		form {
 			display:table;
 			margin:0px auto;
-			width:80%;
 			position:relative;
 		}
 		h1 {
@@ -52,7 +52,6 @@ body {
 			display:inline-block;
 		}
 		label {
-			width:70%;
 			margin-right:10px;
 			input {
 				// height:40px;
@@ -80,6 +79,37 @@ body {
 	}
 }
 
+@media (min-width: 769px) {
+	form {
+		width:80%;
+	}
+}
+
+@media (max-width: 768px) {
+	form {
+		width:90%;
+	}
+}
+
+@media (max-width: 667px) {
+	footer.press {
+		background-color:#003333;
+	}
+	header.press {
+    padding: 5px 20px !important;
+    background-color:#003333;
+	}
+	.press .liquid-container {
+		overflow:scroll;
+	}
+	form {
+		width:100%;
+	}
+	.press-main {
+		padding-bottom:100px;
+	}
+}
+
 @media (min-width: 416px) {
 	.press-main {
 		@include span-columns(8);
@@ -89,6 +119,9 @@ body {
 			text-align:center;
 		}
 	}
+	label {
+		width:70%;
+	}
 }
 
 @media (max-width: 415px) {
@@ -96,7 +129,10 @@ body {
 		h1 {
 			font-size:36px;
 		}
-		padding:0px 20px;
+		padding:100px 20px;
 		@include span-columns(12);
+	}
+	label {
+		width:50%;
 	}
 }
