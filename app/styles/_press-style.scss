@@ -17,38 +17,86 @@ body {
 	}
 	footer.press {
 		li {
-			border:1px solid #DFE2DB;
-			transition: border 1s ease;
+			color:white;
 			&.active {
-				background-color:#DFE2DB;
-				transition: background-color 1s ease;
+				border-bottom:1px solid white;
 			}
 		}
 	}
 	.press-main {
-		padding-top:10%;
-		.logo-container {
-			@include span-columns(12);
-		}
-		img {
-			width:200px;
+		color:#ffffff;
+		font-family: 'Lato', sans-serif;
+		form {
 			display:table;
 			margin:0px auto;
+			width:80%;
+			position:relative;
 		}
-		.fa {
-			font-size:72px;
-			color:white;
-			@include span-columns(1);
-			cursor: pointer;
-			padding:0px 20px;
+		h1 {
+			font-size:60px;
+			color: #ffffff;
 		}
-		.body-text {
-			font-family: 'Montserrat', sans-serif;
-			@include span-columns(10);
-			padding:0px 20px;
+		p {
+			font-size:30px;
+			text-align: justify;
+  		text-justify: newspaper
+		}
+		hr {
+			border-color:#003333;
+			
+		}
+		hr:last-of-type {
+			margin-top:80px;
+		}
+		label, button {
+			display:inline-block;
+		}
+		label {
+			width:70%;
+			margin-right:10px;
+			input {
+				// height:40px;
+				border-radius:5px;
+				border:none;
+				font-size:24px;
+				padding:5px 10px;
+				width:100%;
+			}
+		}
+		button {
+			background-color:#FF3333;
+			border:none;
 			color:white;
-			text-align:center;
 			font-size:24px;
+			font-family: 'Lato', sans-serif;
+			padding:5px 20px;
+			border-radius:5px;
+			cursor:pointer;
 		}
+		.chimp-says {
+			position:absolute;
+			margin-top:10px;
+		}
+	}
+}
+
+@media (min-width: 416px) {
+	.press-main {
+		@include span-columns(8);
+		@include shift(2);
+		margin-top:50px;
+		h1 {
+			text-align:center;
+		}
+	}
+}
+
+@media (max-width: 415px) {
+	.press-main {
+		h1 {
+			font-size:36px;
+		}
+		padding:0px 20px;
+		@include span-columns(12);
 	}
 }
