@@ -17,11 +17,9 @@ body {
 	}
 	footer.index {
 		li {
-			border:1px solid white;
-			transition: border 1s ease;
+			color:white;
 			&.active {
-				background-color:white;
-				transition: background-color 1s ease;
+				border-bottom:1px solid white;
 			}
 		}
 	}
@@ -52,7 +50,7 @@ body {
 	.body-text {
 		padding-top:10%;
 		@include span-columns(8);
-		@include shift(3);
+		@include shift(4);
 	}
 	.index-main {
 		img {
