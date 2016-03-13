@@ -30,9 +30,10 @@ body {
 		form {
 			display:table;
 			margin:0px auto;
+			float:none;
 			position:relative;
 		}
-		input[name="FIRSTNAME"], input[name="LASTNAME"], input[name="COMPANY"] {
+		input[name="FNAME"], input[name="LNAME"], input[name="MMERGE3"] {
 			display:none;
 		}
 		h1 {
