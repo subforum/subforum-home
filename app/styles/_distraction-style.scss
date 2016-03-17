@@ -56,14 +56,14 @@ body {
 				border:none;
 				border-radius:5px;
 				font-size:24px;
-				font-family: 'Lato';
+				font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 				margin-bottom: 10px;
 				cursor:pointer;
 			}
 			.chimp-says {
 				font-size:18px;
 				color:white;
-				font-family: 'Lato';
+				font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 			}
 		}
 		h2 {
@@ -71,7 +71,7 @@ body {
 			font-size:72px;
 		}
 		p {
-			font-family: 'Lato';
+			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 			font-size: 18px;
 		}
 		.logo-container {
@@ -91,7 +91,7 @@ body {
 			margin-top:15%;
 		}
 		.body-text {
-			font-family: 'Montserrat', sans-serif;
+			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 			@include span-columns(6);
 			padding:0px 20px;
 			color:#585858;
