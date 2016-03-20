@@ -18,13 +18,14 @@ body {
     left: 0;
     width:100%;
     .logo {
-        font-family: "KnewaveOutlineRegular";
+        font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
         text-transform: uppercase;
         float:left;
         transition: color 0.5s ease;
+        letter-spacing: 6px;
     }
     nav {
-      font-family: "Raleway";
+      font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
       text-transform: uppercase;
       float:right;
       font-size: 24px;

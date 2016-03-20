@@ -2,22 +2,29 @@
 
 body {
 	&.index {
-		background-color: #EE3124;
+		background-color: #F0552D;
 		transition: background 1s linear;
 	}
 	header.index {
 		h1 {
 			color: white;
 			transition: color 1s ease;
+			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
+			letter-spacing: 6px;
 		}
 		li {
 			color: white;
 			transition: color 1s ease;
+			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
+			font-weight: 200;
+			letter-spacing: .3px;
 		}
 	}
 	footer.index {
 		li {
 			color:white;
+			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
+			font-weight: 200;
 			&.active {
 				border-bottom:1px solid white;
 			}
@@ -33,7 +40,7 @@ body {
 		}
 		.body-text {
 			color:white;
-			font-family: 'Lato', sans-serif;
+			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 			font-size:36px;
 		}
 		.fa {
@@ -54,8 +61,8 @@ body {
 	}
 	.index-main {
 		img {
-			height:95%;
-			top:10px;
+			height:80%;
+			top:100px;
 			left:-200px;
 		}
 	}
@@ -67,9 +74,9 @@ body {
     	display: none;
     }
 		img {
-			height:95%;
-			top:10px;
-			left:-100px;
+			height:80%;
+			top:100px;
+			left:-200px;
 		}
   }
   .body-text {
@@ -88,8 +95,8 @@ body {
 @media (max-width: 415px) {
 	.index-main {
 		img {
-			height:95%;
-			top:10px;
+			height:80%;
+			top:100px;
 			left:-200px;
 		}
   }
