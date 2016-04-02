@@ -6,11 +6,8 @@ body {
 		transition: background 1s linear;
 	}
 	header.index {
-		h1 {
-			color: white;
-			transition: color 1s ease;
-			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
-			letter-spacing: 6px;
+		.logo {
+			background-image: url('watermark_white.svg');
 		}
 		li {
 			color: white;

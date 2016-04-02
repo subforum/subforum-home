@@ -6,9 +6,8 @@ body {
 		transition: background 1s linear;
 	}
 	header.press {
-		h1 {
-			color: #DFE2DB;
-			transition: color 1s ease;
+		.logo {
+			background-image: url('watermark_white.svg');
 		}
 		li {
 			color: #DFE2DB;
@@ -40,7 +39,7 @@ body {
 			display:none;
 		}
 		h1 {
-			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
+			font-family: 'Avenir Light', 'Open-Sans', 'Helvetica', sans-serif;
 			font-size:60px;
 			color: #ffffff;
 		}

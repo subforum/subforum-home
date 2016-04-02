@@ -10,13 +10,8 @@
 	right:0;
 	header {
 		position:relative;
-		.overlay-logo {
-			color:#F0552D;
-			display:inline-block;
-			float:left;
-			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
-			letter-spacing: 6px;
-	    text-transform: uppercase;
+		.logo {
+			background-image: url('watermark_orange.svg') !important;
 		}
 		.fa {
 			float:right;
@@ -46,8 +41,9 @@
 		}
 		font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 		color: #404041;
-		margin:0px auto;
+		margin:0px auto !important;
 		display:table;
+		float:none;
 		font-size:24px;
 		line-height:1.5em;
 

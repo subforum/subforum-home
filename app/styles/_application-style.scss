@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
 
 body {
   .liquid-container {
@@ -17,12 +17,18 @@ body {
     top: 0;
     left: 0;
     width:100%;
+    & > div {
+      display:inline-block;
+    }
+    & > div:last-child {
+      float:right;
+    }
     .logo {
-        font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
-        text-transform: uppercase;
-        float:left;
-        transition: color 0.5s ease;
-        letter-spacing: 6px;
+        width:160px;
+        height:40px;
+        background-size:100%;
+        background-position: left top;
+        background-repeat: no-repeat;
     }
     nav {
       font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;

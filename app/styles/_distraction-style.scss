@@ -7,10 +7,8 @@ body {
     background-position: right top;
 	}
 	header.distraction {
-		h1 {
-			color: #ffffff;
-			transition: color 1s ease;
-			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
+		.logo {
+			background-image: url('watermark_white.svg');
 		}
 		li {
 			color: #ffffff;
