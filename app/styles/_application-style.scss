@@ -5,6 +5,7 @@ body {
     position:absolute !important;
     top:0;
     bottom:0;
+    left:0;
   }
 	ul {
 		list-style: none;
@@ -37,6 +38,10 @@ body {
       font-size: 24px;
       cursor:pointer;
       margin-right:20px;
+
+    }
+    ul {
+      margin-top:10px;
     }
   }
   footer {
@@ -71,7 +76,7 @@ body {
 
 @media (min-width: 769px) {
   footer {
-    bottom:50px;
+    bottom:20px;
   }
 }
 

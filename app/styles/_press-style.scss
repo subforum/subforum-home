@@ -52,7 +52,7 @@ body {
 
 		}
 		hr:last-of-type {
-			margin-top:80px;
+			margin-top:40px;
 		}
 		label, button {
 			display:inline-block;
@@ -74,7 +74,7 @@ body {
 			color:white;
 			font-size:24px;
 			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
-			padding:5px 20px;
+			padding:6px 20px;
 			border-radius:5px;
 			cursor:pointer;
 		}
@@ -85,23 +85,17 @@ body {
 	}
 }
 
-@media (min-width: 769px) {
-	.press-main {
-		form {
-			width:80%;
-		}
-	}
-}
-
-@media (max-width: 768px) {
-	.press-main {
-		form {
+@media (min-width: 788px) {
+	form {
+		position:relative;
 			width:90%;
+			label {
+				width:70%;
+			}
 		}
-	}
 }
 
-@media (max-width: 667px) {
+@media (max-width: 787px) {
 	footer.press {
 		background-color:#003333;
 	}
@@ -116,7 +110,18 @@ body {
 	.press-main {
 		padding-bottom:100px;
 		form {
-			width:100%;
+			width:90%;
+			label {
+				width:100%;
+				margin-bottom:20px;
+				input {
+					width: 100%;
+
+				}
+			}
+			button {
+				width:100%
+			}
 		}
 	}
 }
@@ -130,9 +135,6 @@ body {
 			text-align:center;
 		}
 	}
-	label {
-		width:70%;
-	}
 }
 
 @media (max-width: 415px) {
@@ -142,9 +144,6 @@ body {
 		}
 		padding:100px 20px;
 		@include span-columns(12);
-		label {
-		width:50%;
-	}
 	}
 
 }
