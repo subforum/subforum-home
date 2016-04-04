@@ -32,17 +32,26 @@ body {
 		margin-top:150px;
 		overflow:scroll;
 		padding-bottom:100px;
+		.container {
+			background-color: rgba(57,63,76,.8);
+			// display:table;
+			overflow:auto;
+			padding-top: 20px;
+			padding-left:20px;
+			padding-right:20px;
+		}
 		.message {
 			color:white;
-			background-color: rgba(57,63,76,.8);
-			padding:10px;
+			
+			// padding:10px;
 			border-radius:5px;
-			margin-bottom:40px;
+			margin-bottom:20px;
 			h2 {
 				font-size: 36px;
 			}
 		}
 		form {
+			padding-top:30px;
 			label, input {
 				width:100%;
 			}
@@ -64,6 +73,8 @@ body {
 				font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 				margin-bottom: 10px;
 				cursor:pointer;
+				padding-top: 5px;
+				padding-bottom: 5px;
 			}
 			.chimp-says {
 				font-size:18px;
@@ -121,12 +132,16 @@ body {
 	body.distraction {
 		background-size: 100%;
 	}
+	.container {
+		@include span-columns(10);
+		@include shift(1);
+	}
 	.message {
-			@include span-columns(4);
-			@include shift(2);
+			@include span-columns(6);
+			// @include shift(2);
 		}
 	form {
-		@include span-columns(4);
+		@include span-columns(6);
 	}
 }
 

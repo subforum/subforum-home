@@ -89,6 +89,7 @@ body {
 }
 
 @media (min-width: 788px) {
+	.press-main {
 	form {
 		position:relative;
 			width:90%;
@@ -96,6 +97,7 @@ body {
 				width:70%;
 			}
 		}
+	}
 }
 
 @media (max-width: 787px) {
