@@ -94,7 +94,10 @@ body {
 		position:relative;
 			width:90%;
 			label {
-				width:70%;
+				width:60%;
+			}
+			button {
+				position: absolute;
 			}
 		}
 	}
@@ -125,7 +128,7 @@ body {
 				}
 			}
 			button {
-				width:100%
+				width:100%;
 			}
 		}
 	}
