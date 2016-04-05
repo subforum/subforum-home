@@ -1,7 +1,7 @@
 .overlay {
 	overflow:scroll;
 	display:none;
-	background-color:white;
+	background-color:#D1D2D4;
 	position:fixed;
 	padding-bottom:100px;
 	top:0;
@@ -11,15 +11,16 @@
 	header {
 		position:relative;
 		.overlay-logo {
-			color:red;
+			color: #white;
 			display:inline-block;
 			float:left;
-			font-family: "KnewaveOutlineRegular";
+			font-family: "Avenir", sans-serif;
 	    text-transform: uppercase;
+			letter-spacing: 6px;
 		}
 		.fa {
 			float:right;
-			color:red;
+			color:#F0552D;
 			font-size:36px;
 			margin-top: 10px;
 			cursor:pointer;
@@ -28,20 +29,21 @@
 
 	.about-body {
 		h1 {
-			color:black;
+			color:#404041;
 			text-align:center;
+			font-family: "Avenir", sans-serif;
 		}
 		ul {
 			list-style: circle;
 		}
 		li {
-			color:black;
+			color:#404041;
 			.fa {
-				color:red;
+				color:#F0552D;
 				margin:0px 5px;
 			}
 		}
-		font-family: 'Lato', sans-serif;
+		font-family: "Avenir", sans-serif;
 		margin:0px auto;
 		display:table;
 		font-size:24px;

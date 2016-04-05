@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="280px" height="331px" viewBox="0 0 280 331" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="subf-logo-main" transform="translate(-30.000000, -44.000000)">
+            <g id="Group" transform="translate(44.000000, 66.000000)">
+                <polygon id="Polygon-1" stroke="#343534" stroke-width="10" stroke-linecap="round" fill="#C9CAC9" points="18.7941543 240.683036 126 30.7569496 126 120.418136 73.9670334 219.152152 125.999995 240.683036 125.999999 281.501991 "></polygon>
+                <polygon id="Polygon-1-Copy" stroke="#343534" stroke-width="10" stroke-linecap="round" fill="#5B5C5B" transform="translate(179.397077, 156.129470) scale(-1, 1) translate(-179.397077, -156.129470) " points="125.794154 240.683036 233 30.7569496 233 120.418136 180.967033 219.152152 232.999995 240.683036 232.999999 281.501991 "></polygon>
+                <polygon id="Triangle-1" stroke="#343534" stroke-width="5" fill="#CB2A16" points="126 120.094636 126 196.367357 75.3319931 217.418138 "></polygon>
+                <polygon id="Triangle-1-Copy" stroke="#343534" stroke-width="5" fill="#E88041" transform="translate(151.334003, 168.756387) scale(-1, 1) translate(-151.334003, -168.756387) " points="176.668007 120.094636 176.668007 196.367357 126 217.418138 "></polygon>
+                <polygon id="Polygon-3" stroke="#D1D2D4" stroke-width="20" points="126 0.581862225 0.189409287 248.187926 126 297.418138 251.810591 248.187926 "></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
