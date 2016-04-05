@@ -2,13 +2,12 @@
 
 body {
 	&.press {
-		background-color: #585858;
+		background-color: #404041;
 		transition: background 1s linear;
 	}
 	header.press {
-		h1 {
-			color: #DFE2DB;
-			transition: color 1s ease;
+		.logo {
+			background-image: url('watermark_white.svg');
 		}
 		li {
 			color: #DFE2DB;
@@ -16,8 +15,14 @@ body {
 		}
 	}
 	footer.press {
+
+		background-color:#003333;
+
 		li {
 			color:white;
+			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
+			font-weight: 200;
+			letter-spacing: .3px;
 			&.active {
 				border-bottom:1px solid white;
 			}
@@ -25,7 +30,7 @@ body {
 	}
 	.press-main {
 		color:#ffffff;
-		font-family: 'Lato', sans-serif;
+		font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 		overflow:scroll;
 		form {
 			display:table;
@@ -37,20 +42,20 @@ body {
 			display:none;
 		}
 		h1 {
+			font-family: 'Avenir Light', 'Open-Sans', 'Helvetica', sans-serif;
 			font-size:60px;
 			color: #ffffff;
 		}
 		p {
 			font-size:30px;
-			text-align: justify;
-  		text-justify: newspaper
+			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 		}
 		hr {
 			border-color:#003333;
-			
+
 		}
 		hr:last-of-type {
-			margin-top:80px;
+			margin-top:40px;
 		}
 		label, button {
 			display:inline-block;
@@ -67,12 +72,12 @@ body {
 			}
 		}
 		button {
-			background-color:#FF3333;
+			background-color: #F0552D;
 			border:none;
 			color:white;
 			font-size:24px;
-			font-family: 'Lato', sans-serif;
-			padding:5px 20px;
+			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
+			padding:6px 20px;
 			border-radius:5px;
 			cursor:pointer;
 		}
@@ -83,23 +88,22 @@ body {
 	}
 }
 
-@media (min-width: 769px) {
+@media (min-width: 788px) {
 	.press-main {
-		form {
-			width:80%;
-		}
-	}
-}
-
-@media (max-width: 768px) {
-	.press-main {
-		form {
+	form {
+		position:relative;
 			width:90%;
+			label {
+				width:60%;
+			}
+			button {
+				position: absolute;
+			}
 		}
 	}
 }
 
-@media (max-width: 667px) {
+@media (max-width: 787px) {
 	footer.press {
 		background-color:#003333;
 	}
@@ -110,11 +114,22 @@ body {
 	.press .liquid-container {
 		overflow:scroll;
 	}
-	
+
 	.press-main {
 		padding-bottom:100px;
 		form {
-			width:100%;
+			width:90%;
+			label {
+				width:100%;
+				margin-bottom:20px;
+				input {
+					width: 100%;
+
+				}
+			}
+			button {
+				width:100%;
+			}
 		}
 	}
 }
@@ -128,9 +143,6 @@ body {
 			text-align:center;
 		}
 	}
-	label {
-		width:70%;
-	}
 }
 
 @media (max-width: 415px) {
@@ -140,9 +152,6 @@ body {
 		}
 		padding:100px 20px;
 		@include span-columns(12);
-		label {
-		width:50%;
 	}
-	}
-	
+
 }

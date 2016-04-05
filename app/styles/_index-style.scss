@@ -1,26 +1,24 @@
-
-
 body {
 	&.index {
 		background-color: #F0552D;
 		transition: background 1s linear;
 	}
 	header.index {
-		h1 {
-			color: #D1D2D4;
-			font-family:"Avenir", sans-serif;
-			transition: color 1s ease;
+		.logo {
+			background-image: url('watermark_white.svg');
 		}
 		li {
-			color: #D1D2D4;
-			font-family:"Avenir", sans-serif;
+			color: #f8f8f8;
 			transition: color 1s ease;
+			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
+			font-weight: 200;
+			letter-spacing: .3px;
 		}
 	}
 	footer.index {
 		li {
 			color:white;
-			font-family:"Avenir", sans-serif;
+			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 			&.active {
 				border-bottom:1px solid white;
 			}
@@ -36,7 +34,7 @@ body {
 		}
 		.body-text {
 			color:white;
-			font-family: "Avenir", sans-serif;
+			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 			font-size:36px;
 		}
 		.fa {
@@ -57,8 +55,8 @@ body {
 	}
 	.index-main {
 		img {
-			height:95%;
-			top:10px;
+			height:600px;
+			top:80px;
 			left:-200px;
 		}
 	}
@@ -70,9 +68,7 @@ body {
     	display: none;
     }
 		img {
-			height:95%;
-			top:10px;
-			left:-100px;
+			display:none;
 		}
   }
   .body-text {
@@ -91,9 +87,7 @@ body {
 @media (max-width: 415px) {
 	.index-main {
 		img {
-			height:95%;
-			top:10px;
-			left:-200px;
+			display:none;
 		}
   }
   .body-text {

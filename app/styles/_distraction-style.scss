@@ -7,37 +7,51 @@ body {
     background-position: right top;
 	}
 	header.distraction {
-		h1 {
-			color: #ffffff;
-			transition: color 1s ease;
+		.logo {
+			background-image: url('watermark_white.svg');
 		}
 		li {
 			color: #ffffff;
 			transition: color 1s ease;
+			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 		}
 	}
 	footer.distraction {
 		background-color:#393f4c;
 		li {
-			color: #ffffff;
+			color: white;
+			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
+			font-weight: 200;
+			&.active {
+				border-bottom:1px solid white;
+			}
 		}
 	}
-	.distraction-main {
+		.distraction-main {
 		@include span-columns(12);
 		margin-top:150px;
 		overflow:scroll;
 		padding-bottom:100px;
+		.container {
+			background-color: rgba(57,63,76,.8);
+			// display:table;
+			overflow:auto;
+			padding-top: 20px;
+			padding-left:20px;
+			padding-right:20px;
+		}
 		.message {
 			color:white;
-			background-color: rgba(57,63,76,.8);
-			padding:10px;
+			
+			// padding:10px;
 			border-radius:5px;
-			margin-bottom:40px;
+			margin-bottom:20px;
 			h2 {
 				font-size: 36px;
 			}
 		}
 		form {
+			padding-top:30px;
 			label, input {
 				width:100%;
 			}
@@ -52,26 +66,28 @@ body {
 			button {
 				width:100%;
 				color:white;
-				background-color:#FF3333;
+				background-color:#F0552D;
 				border:none;
 				border-radius:5px;
 				font-size:24px;
-				font-family: 'Lato';
+				font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 				margin-bottom: 10px;
 				cursor:pointer;
+				padding-top: 5px;
+				padding-bottom: 5px;
 			}
 			.chimp-says {
 				font-size:18px;
 				color:white;
-				font-family: 'Lato';
+				font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 			}
 		}
 		h2 {
-			font-family: 'Lato';
+			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 			font-size:72px;
 		}
 		p {
-			font-family: 'Lato';
+			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 			font-size: 18px;
 		}
 		.logo-container {
@@ -91,7 +107,7 @@ body {
 			margin-top:15%;
 		}
 		.body-text {
-			font-family: 'Montserrat', sans-serif;
+			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 			@include span-columns(6);
 			padding:0px 20px;
 			color:#585858;
@@ -116,12 +132,16 @@ body {
 	body.distraction {
 		background-size: 100%;
 	}
+	.container {
+		@include span-columns(10);
+		@include shift(1);
+	}
 	.message {
-			@include span-columns(4);
-			@include shift(2);
+			@include span-columns(6);
+			// @include shift(2);
 		}
 	form {
-		@include span-columns(4);
+		@include span-columns(6);
 	}
 }
 

@@ -1,7 +1,7 @@
 .overlay {
 	overflow:scroll;
 	display:none;
-	background-color:#D1D2D4;
+	background-color:#f8f8f8;
 	position:fixed;
 	padding-bottom:100px;
 	top:0;
@@ -10,13 +10,8 @@
 	right:0;
 	header {
 		position:relative;
-		.overlay-logo {
-			color: #white;
-			display:inline-block;
-			float:left;
-			font-family: "Avenir", sans-serif;
-	    text-transform: uppercase;
-			letter-spacing: 6px;
+		.logo {
+			background-image: url('watermark_orange.svg') !important;
 		}
 		.fa {
 			float:right;
@@ -31,7 +26,8 @@
 		h1 {
 			color:#404041;
 			text-align:center;
-			font-family: "Avenir", sans-serif;
+			font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
+			letter-spacing: 0px;
 		}
 		ul {
 			list-style: circle;
@@ -43,9 +39,11 @@
 				margin:0px 5px;
 			}
 		}
-		font-family: "Avenir", sans-serif;
-		margin:0px auto;
+		font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
+		color: #404041;
+		margin:0px auto !important;
 		display:table;
+		float:none;
 		font-size:24px;
 		line-height:1.5em;
 
