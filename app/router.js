@@ -6,8 +6,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('press', { path: '/join'});
-  this.route('distraction', { path: '/workshop' });
+  this.route('join', { path: '/join'});
+  this.route('workshop', { path: '/workshop' });
 });
 
 export default Router;

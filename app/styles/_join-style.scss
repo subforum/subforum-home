@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 body {
-	&.press {
+	&.join {
 		background-color: #404041;
 		transition: background 1s linear;
 	}
-	header.press {
+	header.join {
 		.logo {
 			background-image: url('watermark_white.svg');
 		}
@@ -14,9 +14,10 @@ body {
 			transition: color 1s ease;
 		}
 	}
-	footer.press {
+	footer.join {
 
 		background-color:#003333;
+		bottom:0;
 
 		li {
 			color:white;
@@ -28,7 +29,7 @@ body {
 			}
 		}
 	}
-	.press-main {
+	.join-main {
 		color:#ffffff;
 		font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;
 		overflow:scroll;
@@ -89,33 +90,31 @@ body {
 }
 
 @media (min-width: 788px) {
-	.press-main {
 	form {
 		position:relative;
-			width:90%;
-			label {
-				width:60%;
-			}
-			button {
-				position: absolute;
-			}
+		width:90%;
+		label {
+			width:60%;
+		}
+		button {
+			position: absolute;
 		}
 	}
 }
 
 @media (max-width: 787px) {
-	footer.press {
+	footer.join {
 		background-color:#003333;
 	}
-	header.press {
+	header.join {
     padding: 5px 20px !important;
     background-color:#003333;
 	}
-	.press .liquid-container {
+	.join .liquid-container {
 		overflow:scroll;
 	}
 
-	.press-main {
+	.join-main {
 		padding-bottom:100px;
 		form {
 			width:90%;
@@ -135,7 +134,7 @@ body {
 }
 
 @media (min-width: 416px) {
-	.press-main {
+	.join-main {
 		@include span-columns(8);
 		@include shift(2);
 		margin-top:50px;
@@ -146,7 +145,7 @@ body {
 }
 
 @media (max-width: 415px) {
-	.press-main {
+	.join-main {
 		h1 {
 			font-size:36px;
 		}
