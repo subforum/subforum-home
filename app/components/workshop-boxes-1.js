@@ -5,6 +5,14 @@ export default Ember.Component.extend({
   width: 100,
   height: 100,
   attributeBindings: ['width','height'],
+  click: function() {
+    let self = this;
+    if (event.pageX > (self.get('width')/2)+80 && event.pageX < (self.get('width')/2)+180) {
+      if (event.pageY > 440 && event.pageY < 550) {
+        window.location.href = 'https://www.eventbrite.com/e/redesign-your-workday-tickets-24936204860';
+      }
+    }
+  },
   didInsertElement: function() {
     let self = this;
     this.set('ctx', this.get('element').getContext('2d'));
@@ -26,6 +34,18 @@ export default Ember.Component.extend({
         self.draw();
       }), 250);
          
+    });
+
+    Ember.$(document).on( "mousemove", function( event ) {
+      if (event.pageX > (self.get('width')/2)+80 && event.pageX < (self.get('width')/2)+180) {
+        if (event.pageY > 440 && event.pageY < 550) {
+          $('html body').css('cursor','pointer');
+        } else {
+          $('html body').css('cursor','auto');
+        }
+      } else {
+        $('html body').css('cursor','auto');
+      }
     });
     
   },
@@ -110,7 +130,7 @@ export default Ember.Component.extend({
     ctx.font = "18px Avenir";
     ctx.fillStyle = "black";
     ctx.textAlign="center"; 
-    this.wrapText(ctx,"View Event",(line1x+143), 490, 50, 30);
+    this.wrapText(ctx,"Get Involved",(line1x+143), 487, 50, 30);
 
     this.wrapText(ctx,"June 10, 2016",(line1x+110), 255, 380, 30);
 
