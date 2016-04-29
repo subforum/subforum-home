@@ -39,12 +39,12 @@ export default Ember.Component.extend({
     Ember.$(document).on( "mousemove", function( event ) {
       if (event.pageX > (self.get('width')/2)+80 && event.pageX < (self.get('width')/2)+180) {
         if (event.pageY > 440 && event.pageY < 550) {
-          $('html body').css('cursor','pointer');
+          Ember.$('html body').css('cursor','pointer');
         } else {
-          $('html body').css('cursor','auto');
+          Ember.$('html body').css('cursor','auto');
         }
       } else {
-        $('html body').css('cursor','auto');
+        Ember.$('html body').css('cursor','auto');
       }
     });
     
@@ -62,7 +62,7 @@ export default Ember.Component.extend({
 
     let line1x = (this.get('width'))/2;
     let text1 = "Redesigning Your Workday";
-    let text2 = "Join Subforum for an all-day experience that will engage a highly curated group from across industries. We'll work together to gain a better understanding of focus, constant learning and growth, and team interactions. Sign up now to reserve a spot."
+    let text2 = "Join Subforum for an all-day experience that will engage a highly curated group from across industries. We'll work together to gain a better understanding of focus, constant learning and growth, and team interactions. Sign up now to reserve a spot.";
 
     // Line 1
     ctx.beginPath();
