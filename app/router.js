@@ -7,7 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('join', { path: '/join'});
-  this.route('workshop', { path: '/workshop' });
+  // this.route('workshop', { path: '/workshop' });
 });
 
 export default Router;

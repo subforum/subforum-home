@@ -1,4 +1,7 @@
-<header class={{this.currentRouteName}}>
+<div style="position:fixed;top:0px;left:0;width:100%;text-align:center;color:#58585b;background-color:white;font-family: 'Avenir', 'Open-Sans', 'Helvetica', sans-serif;font-size:18px;z-index:1000;">
+  <p><a href="https://www.eventbrite.com/e/redesign-your-workday-tickets-24936204860" style="color:red;">Learn more</a> about our upcoming workshop "Redesign Your Workday" on June 10 in Boston.</p>
+</div>
+<header class={{this.currentRouteName}} style="padding-top:10px;">
 	<div class="logo"></div>
 	{{about-overlay}}
 </header>
@@ -10,7 +13,6 @@
 		<ul>
 			{{#link-to 'index' tagName="li" id="menu-index" href=false}}Home{{/link-to}}
 			{{#link-to 'join' tagName="li" id="menu-press" href=false}}Join{{/link-to}}
-			{{#link-to 'workshop' id="menu-distraction" tagName="li"}}Workshop{{/link-to}}
 		</ul>
 	</nav>
 </footer>
